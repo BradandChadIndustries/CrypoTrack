@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Home Page</title>
+	<title>CrypoTrack</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<h1>Bitcoin Price</h1>
-	<p>The current price of Bitcoin is: <span id="price"></span></p>
 
+<body>
+	<header>
+		<h1>CrypoTrack</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Cryptocurrencies</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="cryptocurrency">
+			<h2>Cryptocurrency Statistics</h2>
+			<div class="box">
+				<form>
+					<label for="crypto-select">Select a cryptocurrency:</label>
+					<select id="crypto-select" name="crypto-select">
+						<option value="bitcoin">Bitcoin</option>
+						<option value="ethereum">Ethereum</option>
+						<option value="dogecoin">Dogecoin</option>
+					</select>
+				</form>
+				<div id="price-container">
+					<p>The current price of <span id="crypto-name">Bitcoin</span>is:</p>
+					<span id="price"></span>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 CrypoTrack. In Development.</p>
+	</footer>
 	<script src="script.js"></script>
 </body>
+
 </html>
