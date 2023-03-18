@@ -95,14 +95,19 @@ label {
 }
 
 select {
-	font-size: 18px;
-	margin-left: 10px;
-	padding: 10px 15px;
-	border: none;
-	border-radius: 5px;
-	background-color: #f5f5f5;
-	cursor: pointer;
-	transition: background-color 0.2s ease-in-out;
+  font-size: 18px;
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+select:hover,
+select:focus {
+  background-color: #e5e5e5;
 }
 
 .box {
